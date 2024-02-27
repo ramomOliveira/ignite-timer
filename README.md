@@ -1,30 +1,74 @@
-# React + TypeScript + Vite
+<h1 align="center">Ignite Timer</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<br />
 
-Currently, two official plugins are available:
+<div align="center">
+  <img alt="Logo VH" src="public/images/logo-ignite.svg" width="120px">
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<br />
 
-## Expanding the ESLint configuration
+## Descrição
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Projeto feito em ReactJs.
 
-- Configure the top-level `parserOptions` property like this:
+<div align="center">
+  <img alt="Imagem Home" src="public/images/home.png" width="800px">
+</div>
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+<p>-------------</p>
+
+<div align="center">
+  <img alt="Imagem Home" src="public/images/home-play.png" width="800px">
+</div>
+
+<p>-------------</p>
+
+<div align="center">
+  <img alt="Imagem Home" src="public/images/list.png" width="800px">
+</div>
+
+  - Projeto esta com deploy no Netlify [clique aqui](https://ignite-timer-react.netlify.app/)
+
+## 🚀 Instalação
+
+Clone o projeto na sua máquina.
+
+```bash
+$ git clone https://github.com/ramomOliveira/ignite-timer.git
+$ cd ignite-timer
+$ code .
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+Para iniciá-lo, siga as etapas abaixo:
+
+```bash
+#instalar as dependências
+$ npm install 
+
+
+#iniciar o projeto
+$ npm run dev #para rodar em desenvolvimento
+```
+
+</br>
+
+## 🧪 Tecnologias
+
+| Tecnologia            | Versão            |
+| --------------------- | ----------------- |
+| hookform/resolvers    | `3.3.4 `          |
+| Styled-Components     | `6.21.3 `          |
+| ReactJs               | `18.2.0 `         |
+| react-hook-form       | `7.50.1 `         |
+| TypeScript            | `5.2.2 `          |
+| zod                   | `3.22.4 `          |
+| date-fns              | `3.3.1 `          |
+| phosphor-icons        | `2.0.15 `          |
+
+<br />
+
+
+
+- Obs: O projeto do curso React da Rocketseat.
