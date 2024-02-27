@@ -10,6 +10,28 @@ export const FormContainer = styled.div`
   font-size: 1.125rem;
   font-weight: bold;
   flex-wrap: wrap;
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    @media (max-width: 25em) {
+      width: 100%;
+    }
+  }
+
+  div:first-child {
+    @media (max-width: 25em) {
+      flex-direction: column;
+      align-items: normal;
+      margin-top: 2rem;
+    }
+  }
+
+  @media (max-width: 40em) {
+    flex-direction: column;
+  }
 `
 
 const BaseInput = styled.input`

@@ -11,4 +11,8 @@ export const LayoutContainer = styled.div`
 
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 25em) {
+    padding: 1.5rem;
+  }
 `
