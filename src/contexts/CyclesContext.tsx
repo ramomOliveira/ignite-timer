@@ -7,6 +7,7 @@ import {
 } from 'react'
 import {
   addNewCycleAction,
+  clearCyclesAction,
   interruptCurrentCycleAction,
   markCurrentCycleAsFinishedAction,
 } from '../reducers/cycles/action'
@@ -27,6 +28,7 @@ interface CyclesContextType {
   setSecondsPassed: (seconds: number) => void
   createNewCycle: (data: CreateCycleData) => void
   interruptCurrentCycle: () => void
+  storageClear: () => void
 }
 
 export const CyclesContext = createContext({} as CyclesContextType)
@@ -101,6 +103,12 @@ export function CyclesContextProvider({
     dispatch(interruptCurrentCycleAction())
   }
 
+  const storageClear = () => {
+    localStorage.removeItem('@ignite-timer:cycles-state-1.0.0')
+
+    dispatch(clearCyclesAction())
+  }
+
   return (
     <CyclesContext.Provider
       value={{
@@ -112,6 +120,7 @@ export function CyclesContextProvider({
         setSecondsPassed,
         createNewCycle,
         interruptCurrentCycle,
+        storageClear,
       }}
     >
       {children}

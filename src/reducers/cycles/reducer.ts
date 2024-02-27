@@ -104,6 +104,13 @@ export function cyclesReducer(
         draft.cycles[currentCycleIndex].finishedDate = new Date()
       })
     }
+
+    case ActionTypes.CLEAR_CYCLES: {
+      return {
+        cycles: [],
+        activeCycleId: null,
+      }
+    }
     default:
       return state
   }
